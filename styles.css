@@ -23,17 +23,9 @@ body {
     line-height: 130%;
 }
 
-.photo-holder {
-
-}
-
 .photo-holder > img {
     height: 525px;
     width: 525px;
-}
-
-main {
-
 }
 
 .btn-sub {
