@@ -50,12 +50,22 @@ body {
     margin-bottom: 97px;
 }
 
-
-.container {
-    margin: auto 102px;
+.teachers-overall {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 100px;
+
 }
+
+.container {
+    margin: auto 102px;
+}
+
+
+.teachers-info {
+    margin-top: 175px;
+    display: flex;
+}
+
 
