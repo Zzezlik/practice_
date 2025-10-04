@@ -44,7 +44,7 @@ body {
 
 .sub-title {
     font-size: 35px;
-    margin: 0 auto 70px auto;
+    margin-bottom: 70px;
 }
 
 .info {
@@ -72,8 +72,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 70px;
 }
+
+
 
 .select {
     display: flex;
