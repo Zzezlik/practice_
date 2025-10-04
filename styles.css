@@ -35,9 +35,9 @@ body {
     height: 80px;
     width: 295px;
     font-size: 20px;
-
+    line-height: 180%;
     border: 0;
-    border-radius: calc(infinity * 1px);
+    /*border-radius: calc(infinity * 1px);*/
     cursor: pointer;
 
 }
@@ -68,6 +68,70 @@ body {
 }
 
 
+
+/*.select > img {*/
+/*    height: 42px;*/
+/*    width: 42px;*/
+/*}*/
+
+.skrew {
+    position: relative;
+    display: inline-block;
+    /*padding: 14px 36px;*/
+    padding: 0;
+    background-color: #0047ff;
+    color: white;
+    font-family: 'Press Start 2P', monospace;
+    /*font-size: 14px;*/
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background 0.3s;
+    clip-path: polygon(
+            0 0,
+            calc(100% - 20px) 0,
+            100% 20px,
+            100% 100%,
+            20px 100%,
+            0 calc(100% - 20px)
+    );
+}
+
+.skrew::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+            120deg,
+            transparent,
+            rgba(255, 255, 255, 0.6),
+            transparent
+    );
+    transform: skewX(-25deg);
+}
+
+@keyframes shine {
+    from {
+        left:-75%;
+    }
+    to {
+        left:128%;
+    }
+}
+
+.skrew:hover::before {
+    animation: shine 0.8s forwards;
+}
+
+.skrew:hover {
+    background-color: #2563ff;
+}
+
+
 .teachers-info {
     margin-top: 175px;
 }
@@ -84,12 +148,6 @@ body {
     gap: 63px;
 }
 
-.select > img {
-    height: 42px;
-    width: 42px;
-
-}
-
 .cards-info {
     display: flex;
     justify-content: center;
@@ -102,17 +160,18 @@ body {
     max-width: 295px;
 }
 
-.cards-info > div > img {
-    background: white;
-    width: 295px;
-    height: 302px;
-}
-
 .cards-info > div > h3 {
     font-size: 24px;
     line-height: 150%;
     margin-bottom: 0;
 }
+
+.cards-info > div > img {
+    background: white;
+    width: 295px;
+    height: 295px;
+}
+
 .cards-info > div > p {
     margin: 0;
     font-size: 22px;
