@@ -9,6 +9,7 @@ html, body {
 :root {
     --btn-blue: "0A36C5";
     --bg: "#0A0B15";
+    --roboto: "Roboto Condensed";
 }
 
 .roboto {
@@ -65,7 +66,49 @@ body {
 
 .teachers-info {
     margin-top: 175px;
-    display: flex;
 }
 
+.title-teachers-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
 
+.select {
+    display: flex;
+    gap: 63px;
+}
+
+.select > img {
+    height: 42px;
+    width: 42px;
+
+}
+
+.cards-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.cards-info > div {
+    word-break: break-word;
+    max-width: 295px;
+}
+
+.cards-info > div > img {
+    background: white;
+    width: 295px;
+    height: 302px;
+}
+
+.cards-info > div > h3 {
+    font-size: 24px;
+}
+.cards-info > div > p {
+    font-size: 22px;
+    font-family: var(--roboto), sans-serif;
+
+}
