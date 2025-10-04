@@ -42,9 +42,12 @@ body {
 
 }
 
+.text-holder > .sub-title {
+    margin-bottom: 70px;
+}
+
 .sub-title {
     font-size: 35px;
-    margin-bottom: 70px;
 
 }
 
@@ -73,9 +76,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 70px;
 }
-
-
 
 .select {
     display: flex;
