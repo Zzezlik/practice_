@@ -178,3 +178,33 @@ body {
     font-family: var(--roboto), sans-serif;
 
 }
+
+.questions > h2 {
+    font-size: 35px;
+}
+
+.questions > li {
+    font-size: 20px;
+    border-bottom: 1px solid;
+    padding: 0 50px 30px 0;
+    background: url("./imgs/assets/arrow-in.png") no-repeat right top;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+.questions > li > p {
+    padding-left: 84px;
+}
+
+.questions li::marker {
+    color: blue;
+    display: inline;
+}
+
+.questions{
+    list-style: decimal-leading-zero inside;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0;
+}
